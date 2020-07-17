@@ -1,0 +1,80 @@
+.validationResults {
+	/* only for test */
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 400px;
+	height: 100px;
+	border: 1px solid black;
+	/* only for test */
+}
+
+.validationSuccess {
+	/* only for test */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100px;
+	height: 50px;
+	border: 1px solid green;
+	/* only for test */
+}
+
+input,
+select,
+textarea {
+	box-sizing: border-box;
+}
+
+textarea {
+	resize: none;
+}
+
+/* különben a szélessége teljes oldalas, és a hiba kijelzést ahhoz igazítom, tehát szétcsúszna */
+.validateOnInputCheckboxGroup,
+.validateOnChangeCheckboxGroup,
+.validateOnSubmitCheckboxGroup {
+	display: inline-block;
+}
+
+
+
+
+/* only for test */
+
+.validInput {
+	border-color: green;
+	background-color: green;
+	margin-left: -10px;
+}
+
+.invalidInput {
+	border-color: red;
+	background-color: red;
+	margin-left: 10px;
+}
+
+form {
+	margin: 25px;
+}
+
+input[type="text"],
+select {
+	width: 100px;
+	height: 20px;
+}
+
+textarea {
+	width: 200px;
+	height: 100px;
+}
+
+.intoTheValidationResultsArea,
+.intoTheErrorTargetDiv,
+.inANewLineAfterInputField,
+.rightFromTheInputFieldPosAbs,
+.aboveTheInputFieldPosAbs,
+.leftFromTheInputFieldPosAbs,
+.belowTheInputFieldPosAbs {
+	background-color: black;
+}
